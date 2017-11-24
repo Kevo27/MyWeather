@@ -8,8 +8,9 @@
   <ion-grid *ngIf="weather">
     <ion-row>
       <ion-col width-50 offset-25>
-        <h2 class="location"> {{weather.location.name}}</h2>
+        <h2 class="location"> {{weather.location.name}}</h2> <p>{{weather.location.region}} , {{weather.location.country}}</p>
         <img src={{weather.current.condition.icon}}>
+        {{weather.current.condition.text}}
       </ion-col>
     </ion-row>
   </ion-grid>

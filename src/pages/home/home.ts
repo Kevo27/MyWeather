@@ -19,8 +19,8 @@ export class HomePage {
 
   ionViewWillEnter(){
   	this.location = {
-  		city: 'AT',
-  		plz: '6890'
+  		city: 'Lustenau',
+  		plz: ''
   	}
 
   	this.weatherProvider.getWeather(this.location.plz, this.location.city)
