@@ -25,7 +25,7 @@ export class HomePage {
 
   	this.weatherProvider.getWeather(this.location.plz, this.location.city)
   	.subscribe(weather => {
-  		this.weather = weather.current.condition;
+  		this.weather = weather;
   	});
   }
 }
